@@ -27,6 +27,10 @@
 
 #define PIN_OUTPUT_LED 23  /* P1-07 */
 
+void msleep(int ms){
+	usleep(ms*1000);
+}
+
 static int GPIOExport(int pin) {
 #define BUFFER_MAX 3
 	char buffer[BUFFER_MAX];
